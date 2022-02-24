@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div>
+<form id="form" class="container">
+ <h1 id="title" class="d-flex justify-content-center text-capitalize">  application form</h1>
+ <p id="description" class="fs-6"> 
+   Form and table is created using HTML, CSS and DOM. It will collect details such as Name, Address, pincode, gender and choice of food. On Submit of the form the values are appended to the table. After updating the table the form field will be cleared for the next Submission.
+ </p> 
+ <div class="container row">
+   <div class="col-12 form-group mb-2">
+ <label for="first-name" class="form-label mb-1"> First Name *</label>
+ <input type="text" id="first-name" required placeholder="Enter Your First Name" class="form-control m-1 p-1">
+</div>
+<div class="col-12 form-group mb-2">
+  <label for="last-name" class="form-label mb-1 "> Last Name *</label>
+  <input type="text" id="last-name" required placeholder="Enter Your last Name" class=" form-control m-1 p-1">
+ </div>
+ <div class="col-12 form-group form-check mb-2">
+  <label for="gender" id="gender" class="form-label me-5 mb-1"> Gender *</label>
+  <!-- <input type="text" id="gender" required placeholder="M/F/Others" class="form-control m-1 p-1"> -->
+  <input type="radio" id="male" name="choose_gender" value="Male" >
+  <label for="male" class="me-5">Male</label>
+  <input type="radio" id="female" name="choose_gender" value="Female" >
+  <label for="female" class="me-5">Female</label>
+  <input type="radio" id="others" name="choose_gender" value="Others">
+  <label for="others" class="me-5">Others</label>
+
+ </div>
+ <div class="col-12 form-group mb-2">
+  <label for="address" class="form-label">Address*</label>
+<textarea id="address" name="address" rows="3" class="form-control" placeholder="1234 Main St" required>
+  </textarea>
+</div>
+<div class="col-12 form-group mb-2">
+  <label for="inputAddress2" class="form-label">Address 2</label>
+  <input type="text" class="form-control" id="inputAddress2" placeholder="City or Town">
+</div>
+<div class="col-md-6 col-lg-6 col-xl-6 form-group mb-2">
+  <label for="inputstate" class="form-label">State *</label>
+  <input type="text" class="form-control" id="inputstate" placeholder="State" required>
+</div>
+<div class="col-md-4 col-lg-4 col-xl-4 form-group mb-2">
+  <label for="inputcountry" class="form-label">Country *</label>
+  <input type="text" id="inputcountry" class="form-control" placeholder="Country" required>
+</div>
+<div class="col-md-2 col-lg-2 col-xl-2 mb-2 form-group">
+  <label for="pincode" class="form-label">Zip *</label>
+  <input type="text" class="form-control" id="pincode" placeholder="123456" required>
+</div>
+<div class=" col-6 mt-2 form-group">
+<label for="food" class="form-label">Choice of food *</label>
+  <select name="food" id="food1" class="form-select mb-2">
+    <option selected>Select food</option>
+    <option value="Coffee">Coffee</option>
+    <option value="Dosa">Dosa</option>
+    <option value="Idli">Idli</option>
+    <option value="Milk">Milk</option>
+    <option value="Tea">Tea</option>
+  </select>
+  <select name="food" id="food2" class="form-select mb-2">
+    <option selected>Select food</option>
+    <option value="Coffee">Coffee</option>
+    <option value="Dosa">Dosa</option>
+    <option value="Idli">Idli</option>
+    <option value="Milk">Milk</option>
+    <option value="Tea">Tea</option>
+  </select>
+</div>
+<div class="col-10 text-center m-5 form-group">
+  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+</div>
+
+</div>
+</form>
+<div id="list" class="container table-responsive"> 
+
+</div>
+
+  </div>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
